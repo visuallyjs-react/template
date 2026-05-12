@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "label": "Hello",
+      "left": 137,
+      "top": 17,
+      "type": "hello",
+      "lang": "en"
+    },
+    {
+      "id": "2",
+      "label": "World",
+      "left": 360,
+      "top": 0,
+      "type": "world",
+      "lang": "en"
+    },
+    {
+      "id": "3",
+      "label": "Hola",
+      "left": -26,
+      "top": 40,
+      "type": "hello",
+      "lang": "es"
+    },
+    {
+      "id": "4",
+      "label": "Mundo",
+      "left": 360,
+      "top": 250,
+      "type": "world",
+      "lang": "es"
+    },
+    {
+      "id": "5",
+      "label": "Ahoj",
+      "left": 16,
+      "top": 140,
+      "type": "hello",
+      "lang": "cz"
+    },
+    {
+      "id": "6",
+      "label": "Světe",
+      "left": 300,
+      "top": 120,
+      "type": "world",
+      "lang": "cz"
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "data": {
+        "lang": "en"
+      }
+    }
+  ]
+}
