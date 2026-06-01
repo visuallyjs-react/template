@@ -1,0 +1,126 @@
+
+
+.vjs-template {
+    width:100%;
+    display:flex;
+    height:80vh;
+    font-family: sans-serif;
+}
+
+.vjs-miniview {
+    position:absolute;
+    left:1rem;
+    bottom:1rem;
+    z-index:50;
+}
+
+.vjs-controls {
+    position:absolute;
+    left:1rem;
+    top:1rem;
+    z-index:50;
+}
+
+/* ------------ drag/drop palette ----------------- */
+
+.vjs-demo-palette {
+    flex:0 0 10%;
+    display:flex;
+    flex-direction: column;
+    border-right:1px solid #ccc;
+    padding:0.5rem;
+}
+
+.vjs-demo-palette > div {
+    cursor:move;
+    transform: scale(0.65);
+}
+
+/* ---------- styles for node types. ---- */
+
+/*
+    Common node styles
+*/
+.vjs-react-node {
+    transition: outline 0.2s;
+    outline:none;
+
+}
+
+/**
+    Hello nodes
+ */
+.vjs-hello {
+    width:80px;
+    height:60px;
+    color:black;
+    background-color: white;
+    border-radius:3px;
+    border:1px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/**
+    World nodes
+ */
+.vjs-world {
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    color:white;
+    background-color: purple;
+    border:1px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/**
+    The element from which edges are dragged on the Hello nodes.
+ */
+.vjs-hello-connect {
+    width:10px;
+    height:10px;
+    background-color:forestgreen;
+    border-radius: 50%;
+    cursor: crosshair;
+    position: absolute;
+    right:5px;
+    bottom:5px;
+}
+
+/**
+    Assigned to elements that are possible targets for an edge drag, when an edge drag starts
+ */
+.vjs-drag-active {
+    outline-offset: 5px;
+    outline:3px solid darkgreen;
+}
+
+/**
+    Assigned to an element when an edge is hovering over it.
+ */
+.vjs-drag-hover {
+    outline-offset: 5px;
+    outline:3px solid orangered;
+}
+
+
+/* ----------------------- edges ---------------------------- */
+
+/**
+    Targets the edge path element
+ */
+.vjs-connector path {
+    stroke-width: 2px;
+    stroke:purple;
+}
+
+/**
+    Targets the arrow overlay on the edges.
+ */
+.vjs-overlay {
+    fill:purple;
+}
