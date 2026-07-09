@@ -113,7 +113,7 @@
 /**
     Targets the edge path element
  */
-.vjs-connector path {
+.vjs-connector-path {
     stroke-width: 2px;
     stroke:purple;
 }
