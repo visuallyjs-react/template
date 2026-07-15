@@ -3,7 +3,7 @@ import {
     SurfaceComponent,
     PaletteComponent,
     ControlsComponent,
-    MiniviewComponent
+    MiniviewComponent, useZoom
 } from "@visuallyjs/browser-ui-react"
 
 import renderOptions from './render-options'
@@ -11,14 +11,18 @@ import viewOptions from './view-options'
 import modelOptions from './model-options'
 
 import greetings from './greetings.js'
+import ShowZoom from "./ShowZoom.jsx";
 
 function App({url}) {
+
+
 
   return <div className="vjs-template">
       { /* SurfaceProvider gives the context for the palette component to find the surface to attach to */}
       <SurfaceProvider>
       { /* Provides a drag/drop palette for new nodes */}
       <PaletteComponent className="vjs-demo-palette">
+          <ShowZoom/>
           { /*
                 we write out the Hello nodes first, with `data-vjs-**` attributes that specify
                 the dataset to create when each node is dragged. Then we write out the World nodes.
